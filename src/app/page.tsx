@@ -14,7 +14,7 @@ import { SatisfiedCustomerSection } from '@/components/landing-page/satisfied-cu
 
 export default function Home() {
   return (
-    <div className="relative overflow-x-hidden bg-background">
+    <div className="relative bg-background">
       <div className="bg-soft-smoke" />
       <AnnouncementBar />
       <main>
