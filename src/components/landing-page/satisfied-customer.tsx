@@ -9,10 +9,10 @@ export function SatisfiedCustomerSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-balance">
-            Спокойна бременност започва с правилната подготовка
+            Спокойната бременност започва с правилната подготовка!
           </h2>
           <p className="mt-4 text-lg text-muted-foreground text-balance">
-            Книга, която ти помага да разбереш какво наистина е важно – без излишен стрес и объркване.
+            Книгата, която ти помага да разбереш какво наистина е важно от А до Я– без излишен стрес и объркване.
           </p>
         </div>
         <div className="mt-12 max-w-5xl mx-auto">
