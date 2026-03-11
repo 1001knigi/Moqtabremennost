@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
+import { Truck } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -107,9 +108,15 @@ export function OrderForm() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" size="lg" className="w-full font-bold text-lg px-8 py-7 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                Изпрати поръчката (11.99€ + доставка)
-              </Button>
+              <div className="space-y-4">
+                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                  <Truck className="h-5 w-5" />
+                  <span>Ориентировъчна цена за доставка 3-4 евро</span>
+                </div>
+                <Button type="submit" size="lg" className="w-full font-bold text-lg px-8 py-7 rounded-full shadow-lg hover:shadow-xl transition-shadow">
+                  Изпрати поръчката (11.99€ + доставка)
+                </Button>
+              </div>
             </form>
           </Form>
         </div>
