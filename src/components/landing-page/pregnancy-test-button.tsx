@@ -1,14 +1,25 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 export function PregnancyTestButton() {
   const [isPositive, setIsPositive] = useState(false);
 
+  useEffect(() => {
+    if (isPositive) {
+      const timer = setTimeout(() => {
+        setIsPositive(false);
+      }, 10000); // Reset after 10 seconds
+
+      return () => clearTimeout(timer); // Cleanup timer on unmount
+    }
+  }, [isPositive]);
+
   const handleClick = () => {
-    // The second click functionality is removed. Only sets state once.
-    setIsPositive(true);
+    if (!isPositive) {
+      setIsPositive(true);
+    }
   };
 
   return (
@@ -34,7 +45,8 @@ export function PregnancyTestButton() {
 
         <button
             onClick={handleClick}
-            className="relative w-96 h-16 bg-card rounded-full shadow-lg border border-gray-200 flex items-center justify-center p-2 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            disabled={isPositive}
+            className="relative w-96 h-16 bg-card rounded-full shadow-lg border border-gray-200 flex items-center justify-center p-2 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-75"
             aria-live="polite"
         >
             {/* Result Window */}
