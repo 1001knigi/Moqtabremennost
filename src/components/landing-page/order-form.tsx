@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { Loader2, Truck } from "lucide-react"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -35,6 +36,7 @@ const formSchema = z.object({
 export function OrderForm() {
   const { toast } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const router = useRouter()
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -51,11 +53,7 @@ export function OrderForm() {
     setIsSubmitting(false)
 
     if (result.success) {
-      toast({
-        title: "Поръчката е приета!",
-        description: "Ще се свържем с вас скоро за потвърждение.",
-      })
-      form.reset()
+      router.push('/thank-you')
     } else {
       toast({
         variant: "destructive",
