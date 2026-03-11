@@ -1,3 +1,4 @@
+
 import { Facebook, Instagram, Mail } from 'lucide-react';
 import Link from 'next/link';
 
@@ -5,7 +6,7 @@ export function AppFooter() {
   return (
     <footer className="bg-card/50 border-t mt-24">
       <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
             <h3 className="font-headline text-xl font-semibold">Моята бременност от А до Я</h3>
             <p className="mt-2 text-sm text-muted-foreground">Вашият спокоен пътеводител в света на майчинството.</p>
@@ -26,6 +27,14 @@ export function AppFooter() {
               <Link href="https://www.instagram.com/1001knigi/" aria-label="Instagram" target="_blank">
                 <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </Link>
+            </div>
+          </div>
+           <div>
+            <h3 className="font-semibold">Правна информация</h3>
+            <div className="mt-2 flex flex-col items-center md:items-start gap-2 text-sm text-muted-foreground">
+              <Link href="/terms-and-conditions" className="hover:text-primary transition-colors">Общи условия</Link>
+              <Link href="/privacy-policy" className="hover:text-primary transition-colors">Защита на личните данни</Link>
+              <Link href="/cookie-policy" className="hover:text-primary transition-colors">Политика за бисквитки</Link>
             </div>
           </div>
         </div>
