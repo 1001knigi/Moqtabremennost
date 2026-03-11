@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-pregnant-silhouette",
+      "description": "A silhouette of a pregnant woman against a soft pastel background",
+      "imageUrl": "https://picsum.photos/seed/101/800/1000",
+      "imageHint": "pregnant silhouette"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/201/100/100",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/202/100/100",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/203/100/100",
+      "imageHint": "happy woman"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/204/100/100",
+      "imageHint": "woman face"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/205/100/100",
+      "imageHint": "portrait person"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/206/100/100",
+      "imageHint": "woman looking"
+    },
+    {
+      "id": "testimonial-7",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/207/100/100",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "testimonial-8",
+      "description": "Avatar for a testimonial",
+      "imageUrl": "https://picsum.photos/seed/208/100/100",
+      "imageHint": "woman happy"
+    }
+  ]
 }
