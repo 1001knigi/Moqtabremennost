@@ -11,6 +11,7 @@ import { FaqSection } from '@/components/landing-page/faq-section';
 import { AppFooter } from '@/components/landing-page/footer';
 import { OrderForm } from '@/components/landing-page/order-form';
 import { SatisfiedCustomerSection } from '@/components/landing-page/satisfied-customer';
+import { PregnancyTestButton } from '@/components/landing-page/pregnancy-test-button';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <AnnouncementBar />
       <main>
         <Hero />
+        <PregnancyTestButton />
         <ProblemSection />
         <SolutionSection />
         <WhatYouWillLearn />
