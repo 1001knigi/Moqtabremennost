@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
@@ -48,6 +49,11 @@ export function FaqSection() {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" className="font-bold text-lg px-10 py-7 rounded-full shadow-lg hover:shadow-xl transition-shadow">
+            <a href="#order-form">Искам спокойна бременност</a>
+          </Button>
         </div>
       </div>
     </section>

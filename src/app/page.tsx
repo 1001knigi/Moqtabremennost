@@ -26,8 +26,8 @@ export default function Home() {
         <WhyDifferent />
         <Testimonials />
         <PricingSection />
-        <SatisfiedCustomerSection />
         <FaqSection />
+        <SatisfiedCustomerSection />
         <OrderForm />
       </main>
       <AppFooter />
