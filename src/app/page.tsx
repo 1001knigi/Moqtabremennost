@@ -10,6 +10,7 @@ import { PricingSection } from '@/components/landing-page/pricing-section';
 import { FaqSection } from '@/components/landing-page/faq-section';
 import { AppFooter } from '@/components/landing-page/footer';
 import { OrderForm } from '@/components/landing-page/order-form';
+import { SatisfiedCustomerSection } from '@/components/landing-page/satisfied-customer';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <WhyDifferent />
         <Testimonials />
         <PricingSection />
+        <SatisfiedCustomerSection />
         <FaqSection />
         <OrderForm />
       </main>

@@ -53,6 +53,12 @@
       "description": "Avatar for a testimonial",
       "imageUrl": "https://picsum.photos/seed/208/100/100",
       "imageHint": "woman happy"
+    },
+    {
+      "id": "satisfied-customer-1",
+      "description": "A happy mother holding her baby",
+      "imageUrl": "https://picsum.photos/seed/301/1200/800",
+      "imageHint": "mother baby"
     }
   ]
 }
