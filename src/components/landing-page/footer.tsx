@@ -14,16 +14,16 @@ export function AppFooter() {
             <h3 className="font-semibold">Контакти</h3>
             <div className="mt-2 flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground">
               <Mail className="h-4 w-4" />
-              <span>contact@placeholder.com</span>
+              <span>1001knigi@gmail.com</span>
             </div>
           </div>
           <div>
             <h3 className="font-semibold">Последвайте ни</h3>
             <div className="mt-2 flex items-center justify-center md:justify-start gap-4">
-              <Link href="#" aria-label="Facebook">
+              <Link href="https://www.facebook.com/profile.php?id=61579574330826" aria-label="Facebook" target="_blank">
                 <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </Link>
-              <Link href="#" aria-label="Instagram">
+              <Link href="https://www.instagram.com/1001knigi/" aria-label="Instagram" target="_blank">
                 <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </Link>
             </div>
