@@ -56,9 +56,9 @@
     },
     {
       "id": "satisfied-customer-1",
-      "description": "A happy mother holding her baby",
-      "imageUrl": "https://i.imgur.com/rM1i2V0.jpg",
-      "imageHint": "mother baby"
+      "description": "A happy mother holding her book",
+      "imageUrl": "/satisfied-customer.jpg",
+      "imageHint": "mother with book"
     }
   ]
 }
