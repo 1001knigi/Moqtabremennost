@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-pregnant-silhouette');
-
   return (
     <section className="py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
@@ -30,16 +27,14 @@ export function Hero() {
             </div>
           </div>
           <div className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full max-w-md mx-auto lg:max-w-none">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
+            <Image
+                src="/cover.jpg"
+                alt="Корица на книгата Моята бременност от А до Я"
                 fill
                 className="object-contain object-center drop-shadow-lg"
-                data-ai-hint={heroImage.imageHint}
+                data-ai-hint="book cover"
                 priority
               />
-            )}
           </div>
         </div>
       </div>

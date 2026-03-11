@@ -1,12 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-pregnant-silhouette",
-      "description": "A silhouette of a pregnant woman against a soft pastel background",
-      "imageUrl": "https://picsum.photos/seed/101/800/1000",
-      "imageHint": "pregnant silhouette"
-    },
-    {
       "id": "testimonial-1",
       "description": "Avatar for a testimonial",
       "imageUrl": "https://picsum.photos/seed/201/100/100",
