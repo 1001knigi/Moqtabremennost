@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Моята Бременност от А до Я',
   description: 'Спокойно и практично ръководство, което ще те преведе от първия положителен тест до мига, в който държиш бебето си в ръце.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
