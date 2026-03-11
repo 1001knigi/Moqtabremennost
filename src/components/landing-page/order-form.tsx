@@ -3,7 +3,8 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
-import { Truck } from "lucide-react"
+import { Loader2, Truck } from "lucide-react"
+import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -17,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
+import { sendOrderEmail } from "@/app/actions/send-order-email"
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -32,6 +34,7 @@ const formSchema = z.object({
 
 export function OrderForm() {
   const { toast } = useToast()
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -42,13 +45,24 @@ export function OrderForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values) // For now, we just log the values
-    toast({
-      title: "Поръчката е приета!",
-      description: "Ще се свържем с вас скоро за потвърждение.",
-    })
-    form.reset()
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true)
+    const result = await sendOrderEmail(values)
+    setIsSubmitting(false)
+
+    if (result.success) {
+      toast({
+        title: "Поръчката е приета!",
+        description: "Ще се свържем с вас скоро за потвърждение.",
+      })
+      form.reset()
+    } else {
+      toast({
+        variant: "destructive",
+        title: "Опа! Нещо се обърка.",
+        description: "Моля, опитайте отново по-късно.",
+      })
+    }
   }
 
   return (
@@ -113,8 +127,9 @@ export function OrderForm() {
                   <Truck className="h-5 w-5" />
                   <span>Ориентировъчна цена за доставка 3-4 евро</span>
                 </div>
-                <Button type="submit" size="lg" className="w-full font-bold text-lg px-8 py-7 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                  Изпрати поръчката (11.99€ + доставка)
+                <Button type="submit" size="lg" className="w-full font-bold text-lg px-8 py-7 rounded-full shadow-lg hover:shadow-xl transition-shadow" disabled={isSubmitting}>
+                  {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                  {isSubmitting ? 'Изпращане...' : 'Изпрати поръчката (11.99€ + доставка)'}
                 </Button>
               </div>
             </form>
