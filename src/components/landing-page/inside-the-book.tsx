@@ -20,7 +20,7 @@ export function InsideTheBook() {
             Какво ще откриеш вътре?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground text-balance">
-            Прегледай съдържанието, което ще те води през следващите 9 месеца.
+            Прегледай съдържанието, което ще те води през твоята бременност.
           </p>
         </div>
         <div className="mt-12 max-w-3xl mx-auto">
