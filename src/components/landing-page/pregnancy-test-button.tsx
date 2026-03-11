@@ -45,8 +45,7 @@ export function PregnancyTestButton() {
 
         <button
             onClick={handleClick}
-            disabled={isPositive}
-            className="relative w-96 h-16 bg-card rounded-full shadow-lg border border-gray-200 flex items-center justify-center p-2 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-75"
+            className="relative w-96 h-16 bg-card rounded-full shadow-lg border border-gray-200 flex items-center justify-center p-2 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             aria-live="polite"
         >
             {/* Result Window */}
