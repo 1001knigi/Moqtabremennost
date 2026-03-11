@@ -19,8 +19,8 @@ export function PricingSection() {
                 <p className="text-lg text-muted-foreground line-through">15.99€</p>
               </div>
               <p className="text-sm text-primary font-semibold">Промоционалната цена е за ограничено време.</p>
-              <Button size="lg" className="w-full font-bold text-lg px-8 py-7 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                Поръчай книгата сега
+              <Button asChild size="lg" className="w-full font-bold text-lg px-8 py-7 rounded-full shadow-lg hover:shadow-xl transition-shadow">
+                <a href="#order-form">Поръчай книгата сега</a>
               </Button>
             </CardContent>
           </Card>
