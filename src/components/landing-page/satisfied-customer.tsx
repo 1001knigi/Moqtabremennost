@@ -22,7 +22,7 @@ export function SatisfiedCustomerSection() {
                 src={customerImage.imageUrl}
                 alt={customerImage.description}
                 fill
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={customerImage.imageHint}
               />
             )}
