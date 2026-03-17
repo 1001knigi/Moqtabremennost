@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button';
 import CountdownTimer from './countdown-timer';
 
 export function AnnouncementBar() {
-  // 7 days from March 12, 2026, 00:00:00
-  const targetDate = '2026-03-19T00:00:00';
+  // 7 days from March 19, 2026, 00:00:00
+  const targetDate = '2026-03-26T00:00:00';
 
   return (
     <div className="sticky top-0 z-50 bg-primary text-primary-foreground py-3 px-4 text-sm font-semibold shadow-md">
