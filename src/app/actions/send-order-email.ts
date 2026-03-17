@@ -15,7 +15,7 @@ export async function sendOrderEmail(values: z.infer<typeof formSchema>) {
   try {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: '1001knigi@gmail.com',
+      to: 'cyxanacta@gmail.com',
       subject: 'Нова поръчка на Моята бременност от А до Я',
       html: `
         <h1>Нова поръчка</h1>
